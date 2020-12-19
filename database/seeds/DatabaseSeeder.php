@@ -14,5 +14,6 @@ class DatabaseSeeder extends Seeder
         $this->call(EvaluationCriteriaSeeder::class);
         $this->call(NetworkNodeSeeder::class);
         $this->call(QualityEvaluationSeeder::class);
+        $this->call(UserSeeder::class);
     }
 }

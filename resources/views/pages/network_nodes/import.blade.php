@@ -7,7 +7,7 @@
                 <div class="card border-0">
                     <div class="card-body">
                         <h4 class="card-title">Tải lên dữ liệu</h4>
-                        <form class="forms-sample" action="/network-nodes/import" method="POST" enctype="multipart/form-data">
+                        <form class="forms-sample" action="/network_nodes/import" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group">
                                 <label>Tệp dữ liệu</label>
