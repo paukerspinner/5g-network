@@ -20,8 +20,11 @@ Route::get('/login', function () {
     return view('pages.login');
 });
 
-Route::get('network_nodes/import', 'NetworkNodeController@import');
-Route::post('network_nodes/import', 'NetworkNodeController@saveData');
+Route::get('/network-nodes/import', 'NetworkNodeController@import');
+Route::post('/network-nodes/import', 'NetworkNodeController@saveData');
+
+Route::get('/network-nodes/export', 'NetworkNodeController@export');
+Route::post('/network-nodes/export', 'NetworkNodeController@showDataExport');
 Route::resource('/network-nodes', 'NetworkNodeController');
 
 // Route::resource('/network-nodes.quality-evaluations', 'NetworkNodeQualityEvaluationController');

@@ -7,13 +7,13 @@
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="/network_nodes/import">
+            <a class="nav-link" href="/network-nodes/import">
                 <i class="mdi mdi-import menu-icon"></i>
                 <span class="menu-title">Nhập dữ liệu</span>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="">
+            <a class="nav-link" href="/network-nodes/export">
                 <i class="mdi mdi-export menu-icon"></i>
                 <span class="menu-title">Xuất dữ liệu</span>
             </a>

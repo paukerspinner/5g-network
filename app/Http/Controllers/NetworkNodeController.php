@@ -131,4 +131,17 @@ class NetworkNodeController extends Controller
         }
         return redirect('/network-nodes');
     }
+
+    public function export() {
+        $network_nodes = NetworkNode::all();
+        return view('pages.network_nodes.export')
+            ->with('network_nodes', $network_nodes);
+    }
+
+    public function showDataExport(Request $request) {
+        $network_node_id = $request->get('network_node_id');
+        $network_node = NetworkNode::with('evaluations')->find($network_node_id);
+        return view('pages.network_nodes.export-show')
+            ->with('network_node', $network_node);
+    }
 }
